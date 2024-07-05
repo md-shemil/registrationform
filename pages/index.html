@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .content {
+            width: 400px; 
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .content h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 24px;
+        }
+        form {
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+        input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        input:focus {
+            border-color: #1ad9d9;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #1ad9d9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #17b3b3;
+        }
+        .column {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Registration Form</h2>
+        <form method="post" action="/register">
+            <div class="column">
+                <label for="form3Example1">Name</label>
+                <input type="text" id="form3Example1" name="name" required>
+            </div>
+            <div class="column">
+                <label for="form3Example3">Email Address</label>
+                <input type="email" id="form3Example3" name="email" required>
+            </div>
+            <div class="column">
+                <label for="form3Example4">Password</label>
+                <input type="password" id="form3Example4" name="password" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
